@@ -37,7 +37,7 @@ class Enemy {
         //update sprites
         if (this.x + this.width < 0) this.x = canvas.width;
         if (gameFrame %  this.flapSpeed == 0) {
-            this.frame > 4 ? this.frame = 0 : this.frame++;
+            this.frame = this.frame > 4 ?  0 : this.frame + 1;
         }
     }
     draw(){
